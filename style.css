@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.navbar{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 0 8px 8px rgba(167, 155, 155, 0.1);
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.hero{
+    width: 100%;
+    height: calc(100vh - 50px);
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    background-color: white;
+}
+.glasseffect{
+    width: 70%;
+    height: 70%;
+    /* border: 1px solid ; */
+   /* From https://css.glass */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* From https://css.glass */
+background: rgba(31, 0, 0, 0.18);
+border-radius: 3px;
+box-shadow: 0 4px 30px rgba(167, 155, 155, 0.1);
+backdrop-filter: blur(0.6px);
+-webkit-backdrop-filter: blur(0.6px);
+/* border: 1px solid rgba(31, 0, 0, 0.23); */
+z-index: 999;
+
+}
+
+.glasseffect > h1{
+    color: rebeccapurple;
+    font-size: 15vw;
+    letter-spacing: -10px;
+}
+.glasseffect > h1 > span:nth-child(1){
+    color: black;
+}
+.glasseffect > h1 > span:nth-child(2){
+    color: rebeccapurple;
+}
+.glasseffect > h1 > span:nth-child(3){
+    color: orange;
+}
+.glasseffect > h1 > span:nth-child(4){
+    color: orange;
+}
+.glasseffect > h1 > span:nth-child(5){
+    color: hotpink;
+}
+.glasseffect > h1 > span:nth-child(2){
+    color: orangered;
+}
+
+.cardsection{
+    width: 100%;
+    height: calc(100vh);
+    /* border: 1px solid green; */
+    background-color: rgb(236, 221, 221);
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.cardone{
+    max-width: 300px;
+    max-height: 350px;
+    background-color: lightgray;
+    padding-inline: 40px;
+    padding-block: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 0 8px rgb(0 0 0 / 86%);
+
+
+}
+.cardone:hover{
+    box-shadow: 0 0 0 rgb(0 0 0 / 86%);
+}
+.des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.des> h4{
+    text-align: center;
+}
+.des> p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards{
+    /* border: 1px solid; */
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* align-items: center; */
+}
+
+.leftCards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.getstartedsection{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+}
+button{
+    all: unset;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: crimson;
+    color: white;
+}
+
+.footer{
+    padding-inline: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: lightgray;
+}
+
+
+.cardheading.one{
+    color: orangered;
+}
+
+.cardheading.two{
+    color: green;
+}
+.cardheading.three{
+    color: hotpink;
+}
